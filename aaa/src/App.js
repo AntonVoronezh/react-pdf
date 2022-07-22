@@ -1,10 +1,11 @@
 import "./App.css";
+import { Footer } from "./components/footer/Footer";
+import { Header } from "./components/header/Header";
 
 function App() {
   return (
     <div className="ui-wrapper">
-      <header>header</header>
-
+      <Header />
       <div className="ui-content-wrapper">
         <section className="ui-section">
           <div className="ui-container">
@@ -13,7 +14,7 @@ function App() {
         </section>
       </div>
 
-      <footer>footer</footer>
+      <Footer />
     </div>
   );
 }
