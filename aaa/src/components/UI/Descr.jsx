@@ -6,7 +6,13 @@ const Descr = ({ className, isPrimary, isSecondary, children, ...rest }) => {
   const classes = classNames(className, "ui-text", { isPrimary, isSecondary });
 
   return (
-    <p className={classes} {...rest}>
+    <p
+      contentEditable
+      suppressContentEditableWarning
+      spellCheck={false}
+      className={classes}
+      {...rest}
+    >
       {children}
     </p>
   );
@@ -22,7 +28,7 @@ Descr.propTypes = {
 Descr.defaultProps = {
   isPrimary: false,
   isSecondary: false,
-  className: '',
+  className: "",
 };
 
 export { Descr };
