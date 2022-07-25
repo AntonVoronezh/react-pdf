@@ -1,18 +1,19 @@
 import React from "react";
 import propTypes from "prop-types";
+import classNames from "classnames";
 
-const Title = ({ children }) => {
-  return (
-      <p>{children}</p>
-  );
+const Title = ({ size, className, children }) => {
+  const classes = classNames(`ui-title-${size}`, className);
+
+  return <p>{children}</p>;
 };
 
-// Header.propTypes = {
-//   onClick: propTypes.func,
-// };
-//
-// Header.defaultProps = {
-//   onClick: () => {},
-// };
+Title.propTypes = {
+  size: propTypes.oneOf(["1", "2", "3", "4", "5"]),
+};
+
+Title.defaultProps = {
+  size: "1",
+};
 
 export { Title };
