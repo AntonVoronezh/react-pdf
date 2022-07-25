@@ -1,9 +1,7 @@
 import React from "react";
-import styled from "styled-components";
 import propTypes from "prop-types";
 
 import "./Header.scss";
-import Avatar from "../UI/Avatar";
 
 const Header = ({ onClick }) => {
   return (

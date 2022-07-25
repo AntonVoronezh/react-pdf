@@ -4,6 +4,7 @@ import "./App.css";
 import { Footer } from "./components/footer/Footer";
 import { Header } from "./components/header/Header";
 import Avatar from "./components/UI/Avatar";
+import {Title} from "./components/UI/Title";
 
 function App() {
   const handleOnClick = () => console.log("handleOnClick");
@@ -16,7 +17,7 @@ function App() {
         <section className="ui-section">
           <div className="ui-container">
             <Avatar isSquare onClick={handleOnClick} />
-            <h1 className="ui-title-1">Hello world!</h1>
+              <Title>77</Title>
           </div>
         </section>
       </div>
